@@ -1,5 +1,62 @@
-def menu_principal()
-
+def menu_principal():
+    print("""Calculadora
+        Menú:
+        1. Números enters
+        2. Números reals
+        3. Canvis de base
+        0. Sortir
+    """)
+def menu_nombres_enters():
+    print("""
+            Menú calculadora de números enters:
+            1. Sumar
+            2. Restar
+            3. Multiplicar
+            4. Dividir
+            0. Sortir
+            """)
+def menu_nombres_reals():
+    print("""
+            Menú calculadora de números reals:
+            1. Sumar
+            2. Restar
+            3. Multiplicar
+            4. Dividir
+            0. Sortir
+            """)
+def menu_canvis_de_base():
+    print("""
+            Menú calculadora canvis de base:
+            1. Donat un binari passar a octal, decimal i hexadecimal.
+            2. Donat un octal passar a binari, decimal i hexadecimal.
+            3. Donat un decimal passar a binari, octal i hexadecimal.
+            4. Donat un hexadecimal passar a binari, octal i decimal.
+            0. Sortir
+            """)
+def menu_binari():
+    # Binari a
+                    b=int(a,base=8)
+                    c=int(a,base=10)
+                    d=int(a,base=16)
+                    print("El número ",a," en octal= ",b, " en decimal= ",c," en hexadecimal= ", d)
+def menu_octal():
+    # Octal a
+                    b=int(a,base=2)
+                    c=int(a,base=10)
+                    d=int(a,base=16)
+                    print("El número ",a," en binari= ",b, " en decimal= ",c," en hexadecimal= ", d)
+def menu_decimal():
+    # Decimal a
+                    b=int(a,base=2)
+                    c=int(a,base=8)
+                    d=int(a,base=16)
+                    print("El número ",a," en binari= ",b, " en octal= ",c," en hexadecimal= ", d)
+def menu_hexadecimal():
+    # Hexadecimal a
+                    b=int(a,base=2)
+                    c=int(a,base=8)
+                    d=int(a,base=10)
+                    print("El número ",a," en binari= ",b, " en octal= ",c," en decimal= ", d)
 opcio=1
 while(opcio!=0):
     print("""Calculadora
