@@ -2,7 +2,7 @@
 def sumar_llista(a):
     sumatori = 0
     for i in a:
-        sumatori += double
+        sumatori+=(i*i) # sumatori +=(i*i)
     return sumatori
 #Funció multiplicar elements de la llista
 def multiplicar_lista (lista):
