@@ -28,4 +28,3 @@ def crear_punts(a):
             print("Adéu")
 
 opcio=2
-while(opcio)
