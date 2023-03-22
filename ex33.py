@@ -18,6 +18,7 @@ def canviTalaiot():
 
 # Funció que ens indica si compartiran el menjar o serem nosaltres el seu àpat
 def trobada(canviTalaiot, puntuacio):
+    p = puntuacio
     print ("T'estas apropant al talaiot...")
     time.sleep(2)
     print ("Està fosc i és tenebrós...")
@@ -27,16 +28,17 @@ def trobada(canviTalaiot, puntuacio):
     time.sleep(2)
     gegantamic = random.randint (1, 2)
     if canviTalaiot == str(gegantamic):
-        puntuacio+=1
-        print ("Et convida a menjar... I, a més, tens {} vides".format(puntuacio))
+        p+=1
+        print ("Et convida a menjar... I, a més, tens {} vides".format(p))
     else:
-        puntuacio-=1
-        print ("Se't menja d'un mos...ÑAMÑAMÑAM, I, a més, tens {} vides".format(puntuacio))
+        p-=1
+        print ("Se't menja d'un mos...ÑAMÑAMÑAM, I, a més, tens {} vides".format(p)) 
+    return p
 
 # Funció principal 
 partidaNova = ("si")
-puntuacio = 0
-while partidaNova == ("s") or partidaNova == ("si"):
+puntuacio = 1
+while puntuacio>0 and (partidaNova == ("s") or partidaNova == ("si")):
     intro()
     nTalaiot = canviTalaiot()
     puntuacio = trobada(nTalaiot, puntuacio)
