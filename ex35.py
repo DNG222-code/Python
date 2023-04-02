@@ -1,5 +1,5 @@
 def llegir_paraula():
-    return(input("Introduir una paraula"))
+    return(input("Introduir una paraula: "))
 def comparar_paraules(a,b):
     if a == b:
         print("Són iguals, per tant rimen")

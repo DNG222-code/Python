@@ -64,4 +64,3 @@ def comparar (a,b):
         else:
             print("")
             return 0
-        
