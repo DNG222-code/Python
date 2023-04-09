@@ -6,9 +6,9 @@ def suma_de_dos_digits():
     
     # Compara la suma con 0 para determinar si es par o impar
     if suma % 2 == 0:
-        print("La suma es parella.")
+        print("La suma es parell")
     else:
-        print("La suma es senar.")
+        print("La suma es senar")
 
 # Ejecutar la función
 suma_de_dos_digits()
