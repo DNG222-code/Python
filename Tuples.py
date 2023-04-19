@@ -11,4 +11,3 @@ for i in range(len(b)):
 
 for i,e in enumerate(b):
     print ("Posició:",i,"Valor:",e)
-    
