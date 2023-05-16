@@ -1,5 +1,5 @@
 from curses.ascii import isdigit
-
+#Importam la funció de isdigit per a poder llegir els números del menú.
 
 def menu():
     while True:
@@ -16,3 +16,6 @@ def menu():
                 return a
 
 print(menu())
+
+def adivinar_un_menu():
+    while 
