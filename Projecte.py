@@ -4,23 +4,28 @@ import random
 def menu():
     print("""
             0. Sortir
-            1. Fica unes coordenades i blender imprimeix un objecte
-            2. Adivinar un número.
+            1. Aleatori.
+            2. Lletres.
             3. Inicia un objecte fet a blender.
             4. Busca minas.
     """)
     a = int(input("Introdueix un número de selecció: "))
     return a
 
-def llista():
-    print("He passat per la llista")
+#Genera 50 nombres aleatoris entre 1 al 100
+def aleatori():
+    l = []
+    for i in range(1,50):
+        x = random.randint(1,100)
+        l.append(x)
+    print(l)
 
-#Funció per a poder adivinar un número del 0 al 20
-def adivina():
-    a =[]
-    for i in range(random.randint):
-        a.append(0,20)
-    x = input(int("Esriu un numero que vulguis: "))
+def lletres():
+    l = []
+    for i in range(int(input("¿Cuantas vegaes vols introduir una lletra?: "))):
+        x = (input("Introdueix una lletra: "))
+        l.append(x)
+    print(l)
 
 def objectes():
     print("He passat per objectes")    
@@ -34,9 +39,9 @@ while a:
     a = menu()
     match a:
         case 1:
-            llista()
+            aleatori()
         case 2:
-            adivina()
+            lletres()
         case 3:
             objectes()
         case 4:
