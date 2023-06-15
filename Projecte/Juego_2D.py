@@ -9,11 +9,11 @@ width = 800
 height = 600
 
 # Colores
-black = (0, 0, 0)
-white = (255, 255, 255)
+negro = (0, 0, 0)
+blanco = (255, 255, 255)
 
 # Creación de la pantalla del juego
-screen = pygame.display.set_mode((width, height))
+pantalla = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Juego 2D")
 
 clock = pygame.time.Clock()
@@ -23,7 +23,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         self.image = pygame.Surface([50, 50])
-        self.image.fill(white)
+        self.image.fill(blanco)
         self.rect = self.image.get_rect()
         self.rect.x = width // 2
         self.rect.y = height - 70
@@ -45,8 +45,8 @@ class Player(pygame.sprite.Sprite):
 class Obstacle(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.Surface([random.randint(20, 80), 20])
-        self.image.fill((random.randint(50, 255), random.randint(50, 255), random.randint(50, 255)))
+        self.image = pygame.Surface([random.randint(10, 30), 20])
+        self.image.fill((random.randint(50, 255), random.randint(30, 155), random.randint(50, 255)))
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, width - self.rect.width)
         self.rect.y = -self.rect.height
@@ -86,8 +86,8 @@ while running:
         running = False
 
     # Dibujar en la pantalla
-    screen.fill(black)
-    all_sprites.draw(screen)
+    pantalla.fill(negro)
+    all_sprites.draw(pantalla)
     pygame.display.flip()
 
     clock.tick(60)

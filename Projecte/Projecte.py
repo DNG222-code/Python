@@ -5,14 +5,15 @@ import random
 #Importat funcions per a el joc 2D.
 import pygame
 import Juego_2D as juego
+
 #Importam la funció de isdigit per a poder llegir els números del menú.
 def menu():
     print("""
             0. Sortir
             1. Aleatori.
             2. Lletres.
-            3. Busca minas.
-            4. Inicia un objecte fet a blender.
+            3. Juego 2D.
+            4.
     """)
     a = int(input("Introdueix un número de selecció: "))
     return a
@@ -34,14 +35,14 @@ def lletres():
     print(l)
 
 def juego_2D():
-    juego.pygame.init()
-
+    juego.comienzo_final()
 
 #programa principal
 a = True
 while a:
     a = menu()
     match a:
+        #En la terminal surt en la part superior el input.
         case 1:
             aleatori()
         case 2:
