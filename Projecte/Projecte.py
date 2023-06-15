@@ -4,7 +4,7 @@ from curses.ascii import isdigit
 import random
 #Importat funcions per a el joc 2D.
 import pygame
-import juego_2D as juego
+import Juego_2D as juego
 #Importam la funció de isdigit per a poder llegir els números del menú.
 def menu():
     print("""
@@ -36,7 +36,6 @@ def lletres():
 def juego_2D():
     juego.pygame.init()
 
-def objectes():
 
 #programa principal
 a = True
@@ -50,7 +49,7 @@ while a:
         case 3:
             juego_2D()
         case 4:
-            objectes()
+            ()
         case 0:
             a = False
             print("Adéu, ara sortirem de l'app")
