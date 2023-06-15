@@ -59,7 +59,6 @@ def juego_2D():
                 self.rect.x -= 5
             if keys[pygame.K_RIGHT]:
                 self.rect.x += 5
-
             if self.rect.x < 0:
                 self.rect.x = 0
             if self.rect.x > width - 50:
@@ -109,6 +108,9 @@ def juego_2D():
         clock.tick(60)
 #Amb aquesta funció es lleva el joc.
     pygame.quit()
+
+def clases():
+
 
 #Estructura de una funció de bucle per a 
 a = True
