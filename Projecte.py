@@ -36,7 +36,7 @@ def lletres():
     print(l)
 
 def joc_dinosaurio():
-
+    
 def objectes():
 
 
