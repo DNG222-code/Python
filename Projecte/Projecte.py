@@ -35,7 +35,7 @@ def lletres():
     print(l)
 
 def juego_2D():
-    juego.comienzo_final()
+    juego.pygame.init()
 
 #programa principal
 a = True
